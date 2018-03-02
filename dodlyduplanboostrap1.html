@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dodly</title>w
+  STANDARD @IMPORT
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  Specify in CSS
+  Use the following CSS rules to specify these families:
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Krona+One" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #728C72;
+      height: 100%;
+      font-family: 'Anton', sans-serif;
+    p{ 
+     font-family: 'Krona One', sans-serif;
+     color:#7FA559 ;
+}
+     h2{
+	 font-family: 'Anton', sans-serif;
+	 color:#727F8C;
+ }
+     h4{
+	  font-family: 'Anton', sans-serif;
+	  color:#f4f5f7;
+  }
+  body{ 
+	  background: rgba(63, 127, 191, 0.8);
+  }
+ /* Set black background color, white text and some padding */
+    footer {
+      background-color:#728C72;
+      color: orange;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4> Howard J Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+	      
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="http://blogs.bestfriends.org/">Friends</a></li>
+        <li><a href="http://www.myblessedhome.net/">Family</a></li>
+        <li><a href="https://www.photoblog.com/browse/popular/">Photos</a></li>
+      </ul><br>
+      <div class="input-group">
+	<form>
+	<p>Search: <input id="keywords" size="24" placeholder="start typing"></p>
+	</form>
+      </div>
+      <div class="well">
+        <p><a href="#">Howard J Blog</a></p>
+        <img src="https://qph.fs.quoracdn.net/main-qimg-ec4f84e3c05c71c356443008a92380ef-c" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small></small></h4>
+      <hr>
+      <h2>Great foods</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Howard J. Howley, Sep 27, 2017.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p>it’s SO FLUFFY!! I must’ve said that more than a million times while eating pancakes in Japan. Pancakes are my passion. Well, they aren’t really, to be honest, but I liked the alliteration. I do love pancakes, but if they were truly my passion, I would be eating at a different pancake joint every day in Tokyo. You could totally eat pancakes everyday and not repeat yourself. If you’re a pancake connoisseur and you’re looking for where to eat fluffy Japanese pancakes in Tokyo, look no further. There are three big pancake places that everyone seems to visit, and for good reason..</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Officially Blogging</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Victor P. Mann, Sep 24, 2016.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>If you haven’t seen/eaten Japanese pancakes, you’re in for a treat! They’re fluffy, cloudy, and incredibly light. There are actually many, many kinds of Japanese pancakes. There’s hotto keiki, which are the Japanese version of regular pancakes, but on crack – hotto keiki tend to be tall, thick and fluffy, but slightly on the dense side. There are also many places in Japan that do American style pancakes, which are exactly what you’d think – the pancakes you know and love, topped with fruit, nuts, cornflakes, and the like. There are even cook your own pancake places where you have a hot plate in front of you so you can be the pancake master. But my favorite pancake, and the pancake style that I think you should absolutely eat in Japan, is the soufflé pancake..</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form id="commentForm">
+		  
+             <div class="form-group">
+               <label for="yourName">Name</label>
+               <input class="form-control" id="yourName" placeholder="Your name" maxlength="20">
+             </div>
+
+             <div class="form-group">
+               <label for="yourComment">Comment</label>
+               <input class="form-control" id="yourComment" placeholder="Your comment" maxlength="140">
+             </div>
+	      
+             <div class="form-group">
+               <label for="yourLink">Image source (optional)</label>
+               <input class="form-control" id="yourLink" placeholder="Your image source (optional)" maxlength="500">
+             </div>
+	      
+             <!-- When you click this button, trigger the submit event on this form. -->
+             <button type="submit" class="btn btn-default" onclick="alert('Thank you for submitting')">Submit</button>
+		
+           </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="http://thirdageservices.com/images/Larkin122008.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja<small> Sep 29, 2017, 9:12 PM</small></h4>
+          <p>The food was tasty and kept me curious to know what that last ingredient was. This is not something you could make at home unless you had a magical skill of knowing what random things taste good together. Not pretentious but personally I thought it was overpriced. </p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="https://i2.ypcdn.com/blob/c1a75723b068213153a21653a85b69b3ab8c19ae" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>John Row <small>Sep 25, 2017, 8:25 PM</small></h4>
+          <p> Enjoyed my cocktail but the chefs tasting menu was pretty mediocre at best and way to much food for two people. Fried rice was cold, fried chicken was spicy but it had an overly sweet dry-rub on it that gave it a strange mouth feel.</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="https://images.huffingtonpost.com/2014-07-24-ino2.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Nested Bro <small>Sep 25, 2017, 8:28 PM</small></h4>
+              <p>Me too! WOW!</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+
+<script type="text/javascript" src="hilitor.js">
+</script>
+<script type="text/javascript">
+var myHilitor;
+document.addEventListener("DOMContentLoaded", function(e) {
+myHilitor = new Hilitor2("playground");
+myHilitor.setMatchType("left");
+}, false);
+document.getElementById("keywords").addEventListener("keyup", function(e) {
+myHilitor.apply(this.value);
+}, false);
+</script>
+
+</body>
+</html>
