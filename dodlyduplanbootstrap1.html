@@ -34,13 +34,24 @@
   body{ 
 	  background: rgba(8, 119, 106, 0.13);
   }
+    img {  
+	 border-radius: 50px;
+	 background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png');
+	 height: 50px; 
+    } 
  /* Set black background color, white text and some padding */
     footer {
       background-color: #82D8CE ;
       color:rgba(88, 222, 206, 0.13);
       padding: 15px;
     }
-    
+    table {
+      margin-left: 20px;
+      font-size: 18px; 
+    }  
+    td {
+      height: 75px; 
+    }
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -48,6 +59,13 @@
         padding: 15px;
       }
       .row.content {height: auto;} 
+      table {
+	margin-left: 0;
+	font-size: 10px;
+      }
+      img {
+	height: 20px;
+      }
     }
   </style>
 </head>
