@@ -117,23 +117,47 @@
       <br><br>
       
       <p><span class="badge"></span> Comments:</p><br>
-      <table class="table table-striped">
-      	<thead>
-      	  <tr>
-      	    <th>Avatar</th>
-      	    <th>Name</th>
-      	    <th>Comment</th>
-      	  </tr>
-      	</thead>
-      	<tbody>
-      	  <tr>
-      	    <!-- This is empty for now, but it will be filled out by an event handler in application.js with the most recent recommendation data from Firebase. -->
-            <td id="link"></td>
-      	    <td id="title"></td>
-      	    <td id="remark"></td>
-      	  </tr>
-      	</tbody>
+      <table>
+	<tr>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+		        <td><strong>Avatar</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="link">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Name</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="title">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Comment</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="remark">
+
+		</tbody>
+	    </table>
+	</td>
+	</tr>
       </table>
+
       
       <div class="row">
         <div class="col-sm-2 text-center">
