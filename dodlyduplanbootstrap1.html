@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dodly</title>
+  <title>Dodly</title>w
+  STANDARD @IMPORT
   <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  Specify in CSS
+  Use the following CSS rules to specify these families:
+
   <link href="https://fonts.googleapis.com/css?family=Anton|Krona+One" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
@@ -19,7 +22,10 @@
       background-color: #728C72;
       height: 100%;
       font-family: 'Anton', sans-serif;
-    }
+}
+a{
+	color:red;
+}
     p{ 
      font-family: 'Krona One', sans-serif;
      color:#7FA559 ;
@@ -41,20 +47,7 @@
       color: orange;
       padding: 15px;
     }
-    img {
-       height: 55px;
-       border-radius: 50px;
-    }
-    br {
-       line-height: 10px; 
-    }
-	      table {
-      margin-left: 20px;
-      font-size: 18px; 
-    }  
-    td {
-      height: 75px; 
-    }
+    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -101,7 +94,7 @@
       <h4><small>RECENT POSTS</small></h4>
       <hr>
       <h2>Officially Blogging</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Victor P. Mann, Sep 24, 2016.</h5>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Victor P. Mann, Sep 24, 2017.</h5>
       <h5><span class="label label-success">Lorem</span></h5><br>
       <p>If you haven’t seen/eaten Japanese pancakes, you’re in for a treat! They’re fluffy, cloudy, and incredibly light. There are actually many, many kinds of Japanese pancakes. There’s hotto keiki, which are the Japanese version of regular pancakes, but on crack – hotto keiki tend to be tall, thick and fluffy, but slightly on the dense side. There are also many places in Japan that do American style pancakes, which are exactly what you’d think – the pancakes you know and love, topped with fruit, nuts, cornflakes, and the like. There are even cook your own pancake places where you have a hot plate in front of you so you can be the pancake master. But my favorite pancake, and the pancake style that I think you should absolutely eat in Japan, is the soufflé pancake..</p>
       <hr>
@@ -111,7 +104,7 @@
 		  
              <div class="form-group">
                <label for="yourName">Name</label>
-               <input class="form-control" id="yourName" placeholder="Your name" maxlength="20">
+               <input class="form-control" id="yourName" placeholder="Your name" maxlength="30">
              </div>
 
              <div class="form-group">
@@ -127,50 +120,27 @@
              <!-- When you click this button, trigger the submit event on this form. -->
              <button type="submit" class="btn btn-default" onclick="alert('Thank you for submitting')">Submit</button>
 		
-      </form>
+           </form>
       <br><br>
       
       <p><span class="badge"></span> Comments:</p><br>
-      <table>
-	<tr>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-		        <td><strong>Avatar</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="link">
-
-		</tbody>
-	    </table>
-	</td>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-			<td><strong>Name</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="title">
-
-		</tbody>
-	    </table>
-	</td>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-			<td><strong>Comment</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="remark">
-
-		</tbody>
-	    </table>
-	</td>
-	</tr>
-      </table> 
+      <table class="table table-striped">
+      	<thead>
+      	  <tr>
+      	    <th>Avatar</th>
+      	    <th>Name</th>
+      	    <th>Comment</th>
+      	  </tr>
+      	</thead>
+      	<tbody>
+      	  <tr>
+      	    <!-- This is empty for now, but it will be filled out by an event handler in application.js with the most recent recommendation data from Firebase. -->
+            <td id="link"></td>
+      	    <td id="title"></td>
+      	    <td id="remark"></td>
+      	  </tr>
+      	</tbody>
+      </table>
       
       <div class="row">
         <div class="col-sm-2 text-center">
@@ -222,8 +192,6 @@ document.getElementById("keywords").addEventListener("keyup", function(e) {
 myHilitor.apply(this.value);
 }, false);
 </script>
-<!-- Load the application script, which will save data to our Firebase app when we click the button. -->
-<script src="/application.js">
-</script>
+
 </body>
 </html>
